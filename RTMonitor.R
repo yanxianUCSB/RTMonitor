@@ -24,9 +24,7 @@ source('./math.R')
 ### Initialization
 {
 ### Working Directory
-# workingDirectory <- dirname(sys.frame(1)$ofile)  # Test
-# workingDirectory <- 'C:\\Users\\Jones Penn\\Google Drive\\Github\\R\\RTMonitor'
-# setwd(workingDirectory)
+workingDirectory <- dirname(sys.frame(1)$ofile)  # Test
 
 ## Copyright and Instruction
 readme.copyright()
