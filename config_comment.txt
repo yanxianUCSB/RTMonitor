@@ -1,0 +1,52 @@
+#### config parameter
+
+## Configs for curve fitting initiation
+# These configs are needed only when "mode = fit.norm" or "mode = fit.2norm"
+k1=1                    # gaussian curve 1 amplification
+mu1=160                 # gaussian curve 1 average
+sigma1=100              # gaussian curve 1 standard deviation
+k2=1                    # gaussian curve 2 amplification
+mu2=160                 # gaussian curve 2 average
+sigma2=100              # gaussian curve 2 standard deviation
+a=1e-10                 # linear baseline slope
+b=5e-7                  # linear baseline y-axis intercept
+
+## Configs for txt file readings
+initial.read=20         # unknown
+skipRow=15              # skip the number of rows at the beginning
+
+## Configs for plotting
+screen.split=2 1        # split the screen into 2 rows and 1 column
+margin=2 2 2 2          # margin of the figure
+type=l                  # type = l means plotting the data in line
+scale.y=1               # y scale, should be positive
+scale.time=1            # time scale, should be positive
+ylim=0 2                # y limit
+tlim=0 120              # time limit
+window.t=auto           # t span. "auto" will plot time
+unit.current=A          # unit
+unit.voltage=V          # unit
+unit.time=s             # unit
+
+## curve fitting mode
+mode=fit.smooth         # fit.smooth: fit the raw data with local smooth
+                        # fit.norm: fit with gaussian peak and linear                                       baseline
+                        # fit.2norm: fit with 2 gaussian peaks and                                          linear baseline
+                        
+## Monitoring
+watching.time=6000      # time to keep plotting. unit: seconds
+watching.interval=0.1   # refresh every 0.1 second 
+
+## filename
+marks=5Hz               # filename id             
+split=-                 # split id from filename
+
+## data analysis
+normalized=0            # normalization
+plotMode=1              # plotmode = 1: plot the realtime peak current
+                        # plotmode = 2: plot the subtraction of 
+                                    peak currents from the first 
+                                    two filename id
+
+## realtime monitoring path
+monitor.path=D:\Desktop\DataYanxian\5Hz
