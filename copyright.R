@@ -1,0 +1,25 @@
+readme.copyright <- function() {
+    cat('           CHI Graphic Realtime Watcher           \n')
+    cat('           Yanxian Lin   Plaxco Lab               \n')
+    cat('           UC Santa Barbara                       \n')
+    cat('--------------------------------------------------\n')
+    cat('           Ver 3.4.2       02/15/2016             \n')
+    readline()
+}
+readme.instruction <- function() {
+    cat('                                                  \n')
+    cat('Welcome to CHI Graphic Realtime Watcher.          \n')
+    cat('                                                  \n')
+    cat('This program monitor CHI txt data files in a      \n')
+    cat('defined path and present realtime graphic.        \n')
+    cat('                                                  \n')
+    cat('Before continue, make sure you have read the      \n')
+    cat('readme.txt and know the option of config.         \n')
+    readline()
+    cat('                                                  \n')
+    cat('                                                  \n')
+    cat('                                                  \n')
+    cat('During program running, you can press ESC any time\n')
+    cat('you want to shut down the process                 \n')
+    readline('Enter to start >>> ')
+}
